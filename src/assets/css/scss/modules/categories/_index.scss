@@ -1,0 +1,39 @@
+.sidebar {
+  @include make-sm-column(3);
+  @include make-md-column(2);
+  color: #fff;
+  padding-top: 10px;
+  @include media (tablet) {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1000;
+      background-color: #2B2828;
+  }
+  @include media (mediumDesktop) {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1000;
+      background-color: #2B2828;
+  }
+  @include media (largeDesktop) {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1000;
+      background-color: #2B2828;
+  }
+  .category-item {
+    color: #fff;
+    margin-bottom: 20px;
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}

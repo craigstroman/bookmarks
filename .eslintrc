@@ -1,0 +1,15 @@
+{
+  "env": {
+      "browser": true,
+      "es6": true,
+      "jquery": true
+  },
+  "extends": "airbnb",
+  "rules": {
+    "max-len": [1, 130, 2, {ignoreComments: true}],
+    "no-console": 0,
+    "no-unused-vars": [1, {"vars": "local", "args": "none"}],
+    "arrow-body-style": [2, "as-needed"],
+    "no-param-reassign": [2, { "props": false }]
+  }
+}

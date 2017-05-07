@@ -1,14 +1,10 @@
-angular.module('Bookmarks', [
-  'ui.router',
-  'categories',
-  'categories.bookmarks'
-])
-  .config(function($stateProvider, $urlRouterProvider) {
-    $stateProvider
-      .state('bookmarksApp', {
-        url: '',
-        abstract: true
-      });
+import angular from 'angular';
+import appComponent from './app.component';
+import CommonModule from './common/index';
+import ComponentsModule from './components/index';
 
-      $urlRouterProvider.otherwise('/');
-  });
+angular.module('app', [
+  CommonModule.name,
+  ComponentsModule.name,
+])
+  .component('app', appComponent);
