@@ -9,29 +9,12 @@
         <title>Bookmarks</title>
         <meta name="description" content=""/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"/>
         <link rel="stylesheet" href="assets/css/styles.css" />
     </head>
-    <body>
-      <div ng-app="Bookmarks">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-sm-3 col-md-2 sidebar" ui-view="categories"></div>
-            <div class="col-sm-9 col-sm-offset-3 col-md-10 main col-md-offset-2" ui-view="bookmarks"></div>
-          </div>
-        </div>
-      </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
-      <script src="app/app.js"></script>
-      <script src="app/categories/categories.js"></script>
-      <script src="app/categories/bookmarks/bookmarks.js"></script>
-      <script src="app/categories/bookmarks/create/create.js"></script>
-      <script src="app/categories/bookmarks/edit/edit.js"></script>
-      <script src="app/common/models/bookmarks/model.js"></script>
-      <script src="app/common/models/categories/model.js"></script>
+    <body ng-app="app" ng-strict-di ng-cloak>
+      <app>
+        Loading...
+      </app>
+      <script src="assets/js/bundle.js"></script>
     </body>
 </html>

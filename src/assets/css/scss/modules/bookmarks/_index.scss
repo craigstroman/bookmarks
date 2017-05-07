@@ -1,0 +1,18 @@
+.main {
+  @include make-sm-column(9);
+  @include make-sm-column-offset(3);
+  @include make-md-column(10);
+  @include make-sm-column-offset(2);
+  padding-top: 10px;
+  h1 {
+    margin-top: 0;
+  }
+  .bookmarks {
+    .bookmark-item {
+      .bookmark-edit {
+        @extend .btn;
+        @extend .btn-link;
+      }
+    }
+  }
+}

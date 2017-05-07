@@ -1,0 +1,18 @@
+@import 'vendor/bootstrap/bootstrap';
+@import 'includes/custom-mixins';
+
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  .app {
+    .container-fluid {
+      .row {
+        @import 'modules/categories/index';
+        @import 'modules/bookmarks/index';
+      }
+    }
+  }
+}
