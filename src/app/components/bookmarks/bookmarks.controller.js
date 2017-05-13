@@ -15,6 +15,7 @@ class BookmarksController {
 
     this.$scope.$on('onCurrentCategoryUpdated', this.reset.bind(this));
     this.getCurrentCategory = this.CategoriesModel.getCurrentCategory.bind(this.CategoriesModel);
+    this.deleteBookmark = this.BookmarksModel.deleteBookmark;
 
     this.reset();
   }
